@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+body{
+ background-color: black;
+ height: 100vh;
+ width: 100vw;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+div{
+ height: 380px;
+ width: 200px;
+ border: 3px solid white;
+ outline: 3px solid white;
+ outline-offset: 4px;
+ position: relative;
+ overflow-y: hidden;
+}
+img{
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100%;
+ transition: transform .75s;
+ opacity: .9;
+ overflow: hidden;
+}
+div:hover{
+ box-shadow: 2 2 10px blue;
+}
+div:hover img{
+ transform: scale(1.5);
+}
+div:hover p{
+ text-shadow: 0 0 10px blue,
+ 0 0 25px #03e9f4,
+ 0 0 50px #03e9f4,
+ 0 0 100px lightblue;
+ opacity: 1;
+}
+div p{
+ position: absolute;
+ left: 20px;
+ bottom: 8px;
+ color: white;
+ font-size: 20px;
+ text-shadow: 0 0 2px blue;
+ text-decoration: underline;
+ opacity: .8;
+ font-family: 'Merriweather', serif;
+ transition: 0.2s ease-in-out;
+}
