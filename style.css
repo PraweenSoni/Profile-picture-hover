@@ -50,3 +50,8 @@ div p{
  font-family: 'Merriweather', serif;
  transition: 0.2s ease-in-out;
 }
+.center{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
